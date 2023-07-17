@@ -13,6 +13,22 @@ header {
 #main .mySlides {
 	background-color: #333;
 }
+#price .table {
+	box-shadow: inset 0px 0px 20px 30px #edeef0;
+}
+#price .table th {
+	background: orange;
+	color: #edeef0;
+}
+#price .table th,
+#price .table tr,
+#price .table td {
+	border: 2px solid orange;
+}
+
+#price .table tr {
+	background: white;
+}
 #mechanics .inner_content .mechanics_profile {
 	background-color: #333;
 	color: #edeef0;

@@ -19,6 +19,7 @@ body {
 	color: white;
 	background-color: #222;
 	font-family: 'Open Sans', sans-serif;
+	scroll-behavior: smooth;
 }
 
 img {
@@ -307,19 +308,42 @@ h2 {
 	margin-bottom: 8px;
 	margin-top: 8px;
 }
-#price .table{
-	margin-left: 8px;
+
+#price .table {
+	margin-left: 20px;
 	float: right;
 	width: 50%;
 	height: 100%;
-	overflow-y:auto;
+	overflow: auto;
 	aspect-ratio: 4/3;
+	padding: 5px 40px;
+	box-shadow: inset 0px 0px 20px 30px #222;
 }
-#price .table table{
-	border-collapse: collapse;
+
+#price .table::-webkit-scrollbar {
+	display: none;
 }
-#price .table th, #price .table tr, #price .table td{
-	border: 1px solid grey;
+
+#price .table table {
+	/* border-collapse: collapse; */
+	position: relative;
+	z-index: -2;
+	margin: 20px 0px;
+}
+
+#price .table th,
+#price .table tr,
+#price .table td {
+	text-align: center;
+}
+
+#price .table th {
+	background: orange;
+	color: black;
+}
+
+#price .table tr {
+	background: #333;
 }
 
 #mechanics ul {
@@ -419,36 +443,52 @@ h2 {
 }
 
 #contacts .inner_content .add_img .modal {
-	display: none; /* Скрыто по умолчанию */
-	position: fixed; /* Оставаться на месте */
-	z-index: 10000; /* Сидеть на вершине */
-	padding-top: 150px; /* Расположение коробки */
+	display: none;
+	/* Скрыто по умолчанию */
+	position: fixed;
+	/* Оставаться на месте */
+	z-index: 10000;
+	/* Сидеть на вершине */
+	padding-top: 150px;
+	/* Расположение коробки */
 	left: 0;
 	top: 0;
-	width: 100%; /* Полная ширина */
-	height: 100%; /* Полный высота */
-	overflow: auto; /* Включите прокрутку, если это необходимо */
-	background-color: rgb(0,0,0); /* Цвет запасной вариант */
-	background-color: rgba(0,0,0,0.9); /* Черный с непрозрачностью */
-  }
-  
-  /* Модальное содержание (изображение) */
-  #contacts .inner_content .add_img .modal-content {
+	width: 100%;
+	/* Полная ширина */
+	height: 100%;
+	/* Полный высота */
+	overflow: auto;
+	/* Включите прокрутку, если это необходимо */
+	background-color: rgb(0, 0, 0);
+	/* Цвет запасной вариант */
+	background-color: rgba(0, 0, 0, 0.9);
+	/* Черный с непрозрачностью */
+}
+
+/* Модальное содержание (изображение) */
+#contacts .inner_content .add_img .modal-content {
 	margin: auto;
 	display: block;
 	width: 70%;
 	max-width: 1000px;
-  }
-  #contacts .inner_content .add_img .modal-content{
+}
+
+#contacts .inner_content .add_img .modal-content {
 	animation-name: zoom;
 	animation-duration: 0.6s;
-  }
-  
-  @keyframes zoom {
-	from {transform:scale(0)}
-	to {transform:scale(1)}
-  }
-  #contacts .inner_content .add_img .close {
+}
+
+@keyframes zoom {
+	from {
+		transform: scale(0)
+	}
+
+	to {
+		transform: scale(1)
+	}
+}
+
+#contacts .inner_content .add_img .close {
 	position: absolute;
 	top: 15px;
 	right: 35px;
@@ -456,14 +496,14 @@ h2 {
 	font-size: 40px;
 	font-weight: bold;
 	transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
 	color: #bbb;
 	text-decoration: none;
 	cursor: pointer;
-  }
+}
 
 #contacts .inner_content .information_block {
 	max-width: 50%;
