@@ -1,0 +1,40 @@
+html,
+body {
+	color: #333;
+	background-color: #edeef0;
+}
+h2{
+	color: #333;
+}
+header {
+	background-color: #3d4043;
+	box-shadow: 0;
+}
+#main .mySlides {
+	background-color: #333;
+}
+#mechanics .inner_content .mechanics_profile {
+	background-color: #333;
+	color: #edeef0;
+}
+#contacts .map {
+	border: 2px solid orange;
+}
+footer {
+	background-color: #e6ebf1;
+}
+footer ul a {
+	color: #333;
+}
+#about .main_logo svg{
+	fill: #333;
+}
+.mnu_top {
+    background-color: #3d4043;
+}
+@media only screen and (max-width: 1206px) {
+	#mechanics .inner_content .mechanics_profile {
+		background-color: #edeef0;
+		color: #333;
+	}
+}

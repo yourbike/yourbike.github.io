@@ -1,0 +1,319 @@
+ @media only screen and (max-width: 1206px) {
+     body {
+         font-size: 14px;
+     }
+
+     header {
+         padding: 0 75px;
+         position: relative;
+
+         position: fixed;
+         z-index: 100;
+     }
+
+     .content {
+         margin: 0 8px 0;
+         padding: 100px 0 0 0;
+     }
+
+     h2 {
+
+         display: flex;
+         align-items: center;
+         align-content: center;
+         justify-content: center;
+         padding: 0 0 20px 0;
+     }
+
+     #main .slideshow-container {
+         margin: 0 8px;
+     }
+
+     .mySlides {
+         width: 100%;
+         aspect-ratio: 3/4;
+         display: block;
+         overflow: hidden;
+         border-radius: 20px;
+     }
+
+     .mySlides img {
+         transform: translate(0, 0);
+         height: 100%;
+         object-fit: cover;
+         object-position: center;
+     }
+
+     .mySlides h {
+         font-size: 32px;
+     }
+
+     .mySlides p {
+         font-size: 16px;
+     }
+
+     .mySlides .text {
+         bottom: 23px;
+     }
+
+     #about .container {
+         margin: 0 8px;
+     }
+
+     #about .main_logo {
+         display: flex;
+         justify-content: center;
+         float: none;
+         padding: 0;
+         max-width: 100%;
+         margin: 0;
+     }
+
+     #about .main_logo svg {
+         max-width: 50%;
+     }
+
+     #about .main_logo img {
+         max-width: 50%;
+     }
+
+     #about .inner {
+         position: relative;
+         max-width: 100%;
+         padding: 8px 0px 20px;
+         text-align: center;
+     }
+
+     #price .inner_content {
+        max-width: 100%;
+    }
+    #price {
+        
+         text-align: center;
+    }
+    #price .table{
+        margin-left: 0;
+        float: none;
+        width: 100%;
+    }
+
+     #mechanics ul {
+         list-style-type: none;
+         column-count: 1;
+     }
+
+     #mechanics ul li {
+         display: block;
+         margin-bottom: .5em;
+     }
+
+     #mechanics .inner_content .mechanics_profile {
+         border: 1px solid orange;
+        padding: 8px;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         position: relative;
+         max-width: 100%;
+         margin: 20px 0;
+     }
+
+     #mechanics .inner_content .mechanics_profile img {
+         opacity: 1;
+         max-width: 50%;
+         height: auto;
+         backface-visibility: hidden;
+         border-radius: 20px;
+     }
+
+     #mechanics .inner_content .mechanics_profile .profile_text {
+         opacity: 1;
+         margin-left: 8px;
+         top: 0;
+         left: 0;
+         transform: translate(0, 0);
+         max-width: 50%;
+         position: relative;
+         text-align: center;
+     }
+
+     #mechanics .inner_content .mechanics_profile:hover .profile_video {
+         opacity: 0;
+     }
+
+     #mechanics .inner_content .mechanics_profile:hover img {
+         opacity: 1;
+     }
+
+     #mechanics .inner_content .mechanics_profile:hover .profile_text {
+         opacity: 1;
+     }
+
+     #contacts .map {
+         display: flex;
+         align-items: center;
+         align-content: center;
+         justify-content: center;
+         float: none;
+         max-width: 100%;
+         padding: 0;
+     }
+
+     #contacts .inner_content {
+         max-width: 100%;
+         padding: 20px 0 0 0;
+     }
+
+     #contacts .inner_content .our_contacts {
+         text-align: center;
+     }
+
+     #contacts .inner_content .add_img img {
+         max-width: 100%;
+         max-height: 260px;
+         border-radius: 20px;
+     }
+     #contacts .inner_content .add_img .modal-content {
+        width: 100%;
+        max-width: 700px;
+        max-height: 100%;
+      }
+
+     #contacts .inner_content .our_ref .telegram_row button {
+         font-size: 32px;
+     }
+
+     .mnu_top {
+         display: none;
+         position: absolute;
+         width: 100%;
+         left: 0;
+         top: 70px;
+         z-index: 10;
+         background-color: #111;
+     }
+
+     .mnu_top li {
+         display: block;
+         margin: 10px;
+         width: 100%;
+     }
+
+     .hamburger {
+         display: block;
+     }
+
+     #ico {
+         width: 50px;
+         height: 50px;
+     }
+
+     footer {
+         padding: 8px 8px;
+     }
+
+     footer ul {
+         list-style-type: none;
+         column-count: 3;
+     }
+
+     #yamp {
+         width: 600px;
+         height: 300px;
+         position: relative;
+     }
+ }
+
+ @media only screen and (max-width: 480px) {
+
+     header {
+         padding: 0 16px;
+         position: relative;
+         position: fixed;
+         z-index: 100;
+     }
+
+     header .logo {
+         max-width: 100px;
+     }
+
+     #contacts .inner_content .our_ref .telegram_row button {
+         font-size: 18px;
+         margin: 8px;
+     }
+
+     .mnu_top {
+         top: 70px;
+     }
+
+     .hamburger .line {
+         width: 20px;
+         height: 2px;
+         margin: 4px auto;
+     }
+
+     #hamburger-1.is-active .line:nth-child(1) {
+         transform: translateY(6px) rotate(45deg);
+     }
+
+     #hamburger-1.is-active .line:nth-child(3) {
+         transform: translateY(-6px) rotate(-45deg);
+     }
+
+     .prev,
+     .next {
+         font-size: 12px;
+     }
+
+     .mySlides h {
+         font-size: 20px;
+     }
+
+     .mySlides p {
+         font-size: 14px;
+     }
+
+     footer {
+         font-size: 12px;
+         padding: 8px 8px;
+     }
+
+     footer ul {
+         list-style-type: none;
+         column-count: 2;
+     }
+ }
+
+ @media only screen and (max-width: 320px) {
+     body {
+         font-size: 10px;
+     }
+
+     header .logo {
+         max-width: 70px;
+     }
+
+     .content {
+         margin: 0 8px 20px;
+         padding: 20px 0 20px 0;
+     }
+
+     .content {
+         margin: 0 4px 20px;
+         padding: 60px 0 20px 0;
+     }
+
+     .mySlides .text {
+         bottom: 15px;
+     }
+
+     h2 {
+
+         font-size: 30px;
+     }
+
+     #reviews .container .yandex_reviews {
+         width: 300px;
+         height: 450px;
+     }
+ }
